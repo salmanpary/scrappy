@@ -1,8 +1,8 @@
 import React from 'react'
-
+import CollectorExpanded from '../../../components/Collector/CollectorExpanded'
 const DetailedCollection = () => {
   return (
-    <div>DetailedCollection</div>
+    <CollectorExpanded/>
   )
 }
 
