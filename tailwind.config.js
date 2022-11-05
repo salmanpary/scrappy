@@ -9,7 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-      'base': ['Oswald', 'sans-serif'] 
+      'base': ['Oswald', 'sans-serif'] ,
+      'poppins': ['Poppins', 'sans-serif'],
+      'poor': ['Poor Story', 'cursive'],
     },
   },
   },
