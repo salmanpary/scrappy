@@ -1,17 +1,14 @@
 
 import Navbar from '../components/Navbar'
 import Cards from '../components/Cards'
+import Topbar from '../components/Topbar'
 
 
 export default function Home() {
   return (
     <div>
         
-        <div className='top bar flex justify-between items-center mt-6 mx-4  mb-8'>
-        <div className='main-page-text flex  justify-start font-poppins text-xl font-bold rounded-3xl '>Hey Lisa!</div>
-
-<div className='Icon rounded-full h-12 w-12 bg-slate-700'></div>
-        </div>
+        <Topbar/>
 
         <div className='main-page-text flex w-52 ml-12 justify-start font-poppins text-xl font-bold m-4  mb-8 bg-slate-300 rounded-3xl p-3 px-4'>Sell Your Scraps </div>
         <div className='card-container'>
