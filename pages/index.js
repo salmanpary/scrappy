@@ -1,14 +1,11 @@
 
-import Collector from '../components/Cards/Collector'
-import SimpleMap from '../components/GMap'
-import Navbar from '../components/Navbar'
-
+import Signup2 from "../components/Signup2"
 
 export default function Home() {
   return (
-    //  <SimpleMap />
-    <>
-
-    </>
+   
+      <Signup2/>
+       
+   
   )
 }
