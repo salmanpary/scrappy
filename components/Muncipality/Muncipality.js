@@ -1,6 +1,5 @@
 import React from 'react'
 import Muncipalitycard from './Muncipalitycard'
-import Navbar from './Navbar'
 const Muncipality = () => {
   return (
     <>

@@ -1,9 +1,11 @@
 
-import Collector from '../components/Cards/Collector'
-
+import Signup2 from "../components/Signup2"
 
 export default function Home() {
   return (
-   <Collector />
+   
+      <Signup2/>
+       
+   
   )
 }
