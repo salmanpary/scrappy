@@ -10,7 +10,7 @@ function CollectorExpanded() {
   const accepthandler = async () => {
     try {
    const res=   await axios.post(
-        `https://scrappy-beta.herokuapp.com/items/updateitems/${details._id}`,
+        `https://scrappy-beta.herokuapp.com/items/updateitems/${details?._id}`,
         {
           status: true,
           accepted: true,
@@ -43,17 +43,17 @@ function CollectorExpanded() {
   }
   return (
     <div className="ml-6">
-      <h1 className="text-xl font-semibold"> ID {details._id}</h1>
+      <h1 className="text-xl font-semibold"> ID {details?._id}</h1>
       <div className="mt-6">
-        <h3 className="font-semibold">{details.address}</h3>
+        <h3 className="font-semibold">{details?.address}</h3>
         <h3 className="font-semibold">
-          {details.date} {details.time}
+          {details?.date} {details?.time}
         </h3>
-        <Image src="/img.png" width={200} height={100} className="" />
+        <img src={details?.photo} width={200} height={100} className="" />
         <div className="">
           <h3 className="font-semibold">Items</h3>
           <ul className="ml-4">
-            {details.items.map((item, index) => (
+            {details?.items?.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
