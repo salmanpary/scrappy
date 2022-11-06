@@ -35,6 +35,11 @@ border-radius: 30px;
   border-radius: 30px;
   }
 
+  .card2{
+    background: #FFFFFF;
+    box-shadow: -4px -4px 13px rgba(255, 255, 255, 0.45), 4px 4px 33px rgba(41, 42, 46, 0.17), inset 2px 3px 18px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+  }
 
 .text-field{
 
