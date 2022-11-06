@@ -2,19 +2,19 @@
 
 Responsible waste collection starts here
 
-##How to run
+<b>How to run<b>
 npm run dev
 
-##Hosted Links
+## Hosted Links
 
-##Frontend
+## Frontend
 https://scrappyx.vercel.app/
-##Backend
+## Backend
 https://scrappy-beta.herokuapp.com
 
 
-##figma/wireframe
+## figma/wireframe
 https://www.figma.com/file/fXYLkbvpytx738jZgfAlux/Scrappy?node-id=9%3A113
 
-##backend project link
+## backend project link
 https://github.com/Vishnurr2k01/Scrappy-Backend
