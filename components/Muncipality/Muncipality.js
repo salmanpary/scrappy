@@ -23,6 +23,8 @@ const Muncipality = () => {
 
   return (
     <>
+    <div>
+
       <div className='m-10'>
 
         <div className='font-bold text-white text-3xl font-poppins card4 p-4 flex flex-col justify-start'>Muncipality
@@ -55,8 +57,9 @@ const Muncipality = () => {
 
 
         <Balls w='300' h = '400'/>
-        <Navbar/>
       </div>
+        <Navbar/>
+    </div>
     </>
   )
 }

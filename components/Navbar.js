@@ -1,9 +1,9 @@
 import React from "react";
 import { useRouter } from "next/router";
 const Navbar = () => {
-  const router=useRouter()
+  const router = useRouter();
   return (
-    <div className="navbar absolute bottom-3 w-full flex  justify-center ">
+    <div className="navbar sticky bottom-3 w-screen flex  justify-center z-50">
       <div className="navbar_container  flex card1 w-[22rem] justify-between rounded-3xl font-base font-bold p-4 px-8">
         <svg
           width="24"
@@ -21,10 +21,10 @@ const Navbar = () => {
           />
         </svg>
 
-        <svg onClick={()=>{
-          router.push('/regcomplaint')
-
-        }}
+        <svg
+          onClick={() => {
+            router.push("/regcomplaint");
+          }}
           width="24"
           height="24"
           viewBox="0 0 24 24"
