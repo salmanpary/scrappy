@@ -3,13 +3,16 @@ const userRoleSlice = createSlice({
     name:"user",
     initialState: {
         userrole:"",
-        name:""
+        name:"",
+        location:""
     },
     reducers:{
         setUserRole(state, action){
-            const {userrole,name} = action.payload;
+            console.log(action.payload)
+            const {userrole,name,location} = action.payload;
             state.userrole = userrole;
             state.name = name;
+            state.location = location;
         }
 
     }
