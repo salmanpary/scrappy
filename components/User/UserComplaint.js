@@ -37,6 +37,8 @@ function UserComplaint() {
   };
 
   return (
+    <div>
+
     <div className="flex justify-center items-center h-screen">
       <div className="card1 p-8 h-[50rem] flex-col justify-center items-center ">
         <h3 className="font-poppins font-semibold text-3xl text-gray-900 mb-8">
@@ -91,6 +93,7 @@ function UserComplaint() {
         </div>
       </div>
       <Balls w='300' h = '400'/>
+    </div>
       <Navbar/>
     </div>
   );
