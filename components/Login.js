@@ -33,6 +33,31 @@ const Login = () => {
         router.push("/collector");
       } else {
         router.push("/muncipality");
+  const router=useRouter()
+  const dispatch=useDispatch()
+  const role=useSelector(state=>state.user.userrole)
+  const [data,setdata]=useState({
+    email:"",
+    password:""
+  })
+  const onsubmit=async()=>{
+    try{
+      if(data.email && data.password){
+
+        const res=await axios.post("https://scrappy-beta.herokuapp.com/auth/login",data)
+        dispatch(userRoleActions.setUserRole({
+          userrole:res?.data?.user?.userrole,
+        name:res?.data?.user?.name,
+        location:res?.data?.user?.address,
+      }))
+      console.log(res)
+    }else {
+      alert('Every field is required')
+    }
+      if(role==="user"){
+        router.push("/userhome")
+      }else if(role==="collector"){
+        router.push("/collector")
       }
     } catch (e) {
       console.log(e);
@@ -68,7 +93,7 @@ const Login = () => {
           Login
         </button>
       </div>
-      <Balls />
+      <Balls w="300" h = "400" />
     </div>
   );
 };

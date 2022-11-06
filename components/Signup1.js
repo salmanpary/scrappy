@@ -9,7 +9,7 @@ import logo from "../public/scrappy.png";
 const Signup1 = () => {
   const dispatch = useDispatch();
   return (
-    <div className="flex-col justify-center flex items-center h-screen gap-32  ">
+    <div bac className="flex-col justify-center flex items-center h-screen gap-32  ">
       <div className="font-logo text-white text-7xl">Scrappy.</div>
       <div className=" card  flex flex-col justify-center items-start ">
         

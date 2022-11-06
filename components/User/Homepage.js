@@ -13,30 +13,30 @@ const Homepage = () => {
   const router = useRouter();
   const cardsdata = [
     {
-      url: "",
+      url: "/images/paper.png",
       title: "paper",
-      description: "dslkfad",
+      description: "Newspapers , Magazines , Books",
     },
     {
-      url: "",
+      url: "/images/plastic.png",
       title: "plastic",
-      description: "dddfadfh",
+      description: "plastics like PET,HDPE ,PVC etc",
     },
-    {
+    {url: "/images/metals.png",
       title: "metal",
-      description: "fldasjflksadflk",
+      description: "pieces of metal like iron , copper etc",
     },
-    {
+    {url: "/images/ewaste.png",
       title: "ewaste",
-      description: "flajdjlfjad",
+      description: "CPU, Monitor, LED TV, Bulb etc",
     },
-    {
-      title: "motor",
-      description: "ldfjldakkf",
+    {url: "/images/motor.png",
+    title: "Motor",
+      description: "motors of fan etc",
     },
-    {
+    {url: "/images/others.png",
       title: "others",
-      description: "dflkdajflk",
+      description: "Battery, Tyre, Fridge etc",
     },
   ];
   const [selectedoptions, setselectedoptions] = useState([]);
@@ -59,7 +59,8 @@ const Homepage = () => {
       <div className="main-page-text flex w-[20rem] ml-12 justify-start font-poppins text-xl font-bold m-4  mb-8 bg-white rounded-3xl p-3 px-4">
         Sell Scraps And Earn Cash{" "}
       </div>
-      <div className="card-container">
+     <div className="overflow-y-scroll">
+       <div className="card-container">
         <div className="flex flex-wrap justify-center items-center gap-5">
           {cardsdata.map((data, key) => (
             <Cards
@@ -72,7 +73,7 @@ const Homepage = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-20">
         <button
           className="bg-slate-900 text-white font-poppins  button-gradient w-52  font-medium h-14 rounded-3xl mt-4 "
           onClick={() => {
@@ -82,6 +83,8 @@ const Homepage = () => {
           Next
         </button>
       </div>
+
+     </div>
 
       <Navbar />
       <Balls />
