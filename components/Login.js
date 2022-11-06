@@ -5,6 +5,8 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useRouter } from "next/router";
 import Balls from "./Balls";
+import Navbar from "./Navbar";
+
 const Login = () => {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -33,38 +35,13 @@ const Login = () => {
         router.push("/collector");
       } else {
         router.push("/muncipality");
-  const router=useRouter()
-  const dispatch=useDispatch()
-  const role=useSelector(state=>state.user.userrole)
-  const [data,setdata]=useState({
-    email:"",
-    password:""
-  })
-  const onsubmit=async()=>{
-    try{
-      if(data.email && data.password){
-
-        const res=await axios.post("https://scrappy-beta.herokuapp.com/auth/login",data)
-        dispatch(userRoleActions.setUserRole({
-          userrole:res?.data?.user?.userrole,
-        name:res?.data?.user?.name,
-        location:res?.data?.user?.address,
-      }))
-      console.log(res)
-    }else {
-      alert('Every field is required')
-    }
-      if(role==="user"){
-        router.push("/userhome")
-      }else if(role==="collector"){
-        router.push("/collector")
       }
     } catch (e) {
       console.log(e);
     }
   };
   return (
-    <div className="flex-col flex items-center  gap-8 mt-12">
+    <div className="flex-col flex items-center  gap-8 mt-12 h-screen ">
       <div className="card flex-col justify-center flex items-center h-screen  ">
         <div className=" text-white font-poppins font-semibold text-2xl mt-2 mb-4">
           Login{" "}
@@ -94,6 +71,7 @@ const Login = () => {
         </button>
       </div>
       <Balls w="300" h = "400" />
+      <Navbar/>
     </div>
   );
 };
