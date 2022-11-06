@@ -18,9 +18,9 @@ function UserComplaint() {
         setComplaint({...complaint,[name]:value})
       
       }
-    const handleSubmit = ()=>{
+    const handleSubmit =async ()=>{
         try {
-            const response = axios.post('https://scrappy-beta.herokuapp.com/complaints',complaint)
+            const response = await axios.post('https://scrappy-beta.herokuapp.com/complaints',complaint)
             console.log(response)
            setTimeout(() => {
             alert("complaint raised successfully")
