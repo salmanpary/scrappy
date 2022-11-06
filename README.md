@@ -32,8 +32,8 @@ npm run test
 
 👤 **Vishnu R Potti , Salman Ali Pary, Amjad ali , Lisa V C**
 
-* Twitter: [@SalmapPary ,@vishnurr2k01 , @i\_am\_blindxx](https://twitter.com/SalmapPary ,@vishnurr2k01 , @i\_am\_blindxx)
-* Github: [@https:\/\/github.com\/salmanpary\/scrappy](https://github.com/https:\/\/github.com\/salmanpary\/scrappy)
+* Twitter: (https://twitter.com/SalmapPary ,https://twitter.com/vishnurr2k01 , https://twitter.com/i\_am\_blindxx)
+* Github: https://github.com/https:\/\/github.com\/salmanpary\/scrappy
 
 ## Show your support
 
