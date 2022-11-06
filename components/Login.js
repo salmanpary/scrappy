@@ -15,13 +15,18 @@ const Login = () => {
   })
   const onsubmit=async()=>{
     try{
-      const res=await axios.post("https://scrappy-beta.herokuapp.com/auth/login",data)
-      dispatch(userRoleActions.setUserRole({
-        userrole:res?.data?.user?.userrole,
+      if(data.email && data.password){
+
+        const res=await axios.post("https://scrappy-beta.herokuapp.com/auth/login",data)
+        dispatch(userRoleActions.setUserRole({
+          userrole:res?.data?.user?.userrole,
         name:res?.data?.user?.name,
         location:res?.data?.user?.address,
       }))
       console.log(res)
+    }else {
+      alert('Every field is required')
+    }
       if(role==="user"){
         router.push("/userhome")
       }else if(role==="collector"){

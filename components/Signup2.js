@@ -26,13 +26,17 @@ const handleChange = (e)=>{
 const submitHandler=async()=>{
   console.log(data)
   try{
-
- const res=await axios.post("https://scrappy-beta.herokuapp.com/auth/signup",data)
- dispatch(userRoleActions.setUserRole({
-  userrole:role,
-  name:res?.data?.newUser?.name,
-  location:res?.data?.newUser?.address,
+    if(data.name && data.email && data.password && data.address && data.phone)
+{
+    const res=await axios.post("https://scrappy-beta.herokuapp.com/auth/signup",data)
+  dispatch(userRoleActions.setUserRole({
+    userrole:role,
+    name:res?.data?.newUser?.name,
+    location:res?.data?.newUser?.address,
  }))
+}else {
+  alert("every field is required")
+}
  router.push('/login')
 
     

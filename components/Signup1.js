@@ -9,7 +9,7 @@ import logo from '../public/scrappy.png'
 const Signup1 = () => {
   const dispatch = useDispatch()
   return (
-    <div className='flex-col justify-center flex items-center h-screen  ' >
+    <div bac className='flex-col justify-center flex items-center h-screen  ' >
       <img src = {logo}/>
       <div className=' card  flex flex-col justify-center items-start '>
       <div className=' font-poppins text-lg font-semibold text-white mb-8 ml-8 '>SignUp As</div>
