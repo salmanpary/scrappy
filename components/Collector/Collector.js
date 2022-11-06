@@ -7,7 +7,7 @@ function Collector({ item }) {
     <div className=" w-[90vw] bg-gray-500 p-2 rounded-lg">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
-          <Image src="/img.png" width={80} height={100} className="" />
+          <img src={item?.photo} width={80} height={100} className="" />
           <div className=" ml-4 flex flex-col">
             {" "}
             <h3>{item?.address}</h3>
