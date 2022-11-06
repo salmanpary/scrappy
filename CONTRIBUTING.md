@@ -7,6 +7,7 @@ npm run dev
   <li>Tailwind css</li>
   <li>Reduxjs Toolkit</li>
 </ul>
+
 ## folder Structure
 Maintain components folder and add a folder for each section.
 In pages maintain a separate folder for each page and index.js file for rendering the whole page
