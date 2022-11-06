@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { userRoleActions } from "../store/userrole-slice";
 import Balls from "./Balls";
-import Navbar from "../Navbar";
+import Navbar from "./Navbar";
 
 const Signup1 = () => {
   const dispatch = useDispatch();
@@ -53,7 +53,7 @@ const Signup1 = () => {
         </div>
       </div>
       <Balls w='400' h = '500'/>
-      <Navbar/>
+     
     </div>
   );
 };

@@ -71,7 +71,7 @@ const Login = () => {
         </button>
       </div>
       <Balls w="300" h = "400" />
-      <Navbar/>
+
     </div>
   );
 };

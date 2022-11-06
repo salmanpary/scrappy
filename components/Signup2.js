@@ -74,7 +74,7 @@ const submitHandler=async()=>{
       >already a user?</button>
       </div>
       <Balls w='400' h = '500'/>
-      <Navbar/>
+  
     </div>
   )
 }

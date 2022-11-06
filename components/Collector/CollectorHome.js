@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import Navbar from "../Navbar";
 
-import Navbar from "../Navbar";
+
 function CollectorHome() {
   const dispatch = useDispatch();
   const [collection, setCollection] = useState([]);
