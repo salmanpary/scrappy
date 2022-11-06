@@ -1,6 +1,13 @@
 import React,{useState} from 'react'
 import { useRouter } from 'next/router'
+import { useSelector } from 'react-redux'
+import axios from 'axios'
+import { userRoleActions } from '../store/userrole-slice'
+import { useDispatch } from 'react-redux'
 const Signup2 = () => {
+  const role=useSelector(state=>state.user.userrole)
+  const  dispatch=useDispatch()
+  console.log(role)
 
   const [data,setData] = useState({
     name:'',
@@ -8,15 +15,29 @@ const Signup2 = () => {
     password:'',
     address:'',
     phone:'',
-    userrole:''
+    userrole:role
   })
 const handleChange = (e)=>{
   const {name,value} = e.target;
   setData({...data,[name]:value})
 
 }
-const submitHandler=()=>{
+const submitHandler=async()=>{
   console.log(data)
+  try{
+
+ const res=await axios.post("https://scrappy-beta.herokuapp.com/auth/signup",data)
+ dispatch(userRoleActions.setUserRole({
+  userrole:role,
+  name:res?.data?.newUser?.name,
+  location:res?.data?.newUser?.address,
+ }))
+ router.push('/login')
+
+    
+  }catch(e){
+    console.log(e)
+  }
 }
 
   const router = useRouter()
@@ -36,7 +57,7 @@ const submitHandler=()=>{
         <input type = 'password ' placeholder='Password' name='password' value={data.password} onChange={handleChange} className='border border-slate-900 p-4 h-14 w-64 rounded-3xl bg-slate-100'></input>
       </div>
       <button className='bg-slate-900 text-white font-poppins   w-64  font-medium py-4 rounded-3xl mt-8'
-      onClick={submitHandler}
+      onClick={()=>submitHandler()}
       >Signup</button>
         <button className=' text-balck font-poppins   w-64  font-medium rounded-3xl mt-2'
       onClick={()=>router.push('/login')}
