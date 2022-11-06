@@ -1,20 +1,43 @@
-## Scrappy
+<h1 align="center">Welcome to Scrappy 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version- Beta-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/SalmapPary ,@vishnurr2k01 , @i\_am\_blindxx" target="_blank">
+    <img alt="Twitter: SalmapPary ,@vishnurr2k01 , @i\_am\_blindxx" src="https://img.shields.io/twitter/follow/SalmapPary ,@vishnurr2k01 , @i\_am\_blindxx.svg?style=social" />
+  </a>
+</p>
 
-Responsible waste collection starts here
+> Responsible waste collection starts here!
 
-## How to run
+### 🏠 [Homepage](https://scrappyx.vercel.app/)
+
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
 npm run dev
+```
 
-## Hosted Links
+## Run tests
 
-## Frontend
-https://scrappyx.vercel.app/
-## Backend
-https://scrappy-beta.herokuapp.com
+```sh
+npm run test
+```
 
+## Author
 
-## figma/wireframe
-https://www.figma.com/file/fXYLkbvpytx738jZgfAlux/Scrappy?node-id=9%3A113
+👤 **Vishnu R Potti , Salman Ali Pary, Amjad ali , Lisa V C**
 
-## backend project link
-https://github.com/Vishnurr2k01/Scrappy-Backend
+* Twitter: [@SalmapPary ,@vishnurr2k01 , @i\_am\_blindxx](https://twitter.com/SalmapPary ,@vishnurr2k01 , @i\_am\_blindxx)
+* Github: [@https:\/\/github.com\/salmanpary\/scrappy](https://github.com/https:\/\/github.com\/salmanpary\/scrappy)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
