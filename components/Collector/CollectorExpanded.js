@@ -49,7 +49,7 @@ function CollectorExpanded() {
         <h3 className="font-semibold">
           {details.date} {details.time}
         </h3>
-        <Image src="/img.png" width={200} height={100} className="" />
+        <img src={details.photo} width={200} height={100} className="" />
         <div className="">
           <h3 className="font-semibold">Items</h3>
           <ul className="ml-4">
