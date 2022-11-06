@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import Balls from "../Balls";
-import Navbar from "../Navbar";
 
 function CollectorExpanded() {
   const router = useRouter();
@@ -78,7 +77,7 @@ function CollectorExpanded() {
       </div>
     </div>
     <Balls w='300' h = '400'/>
-    <Navbar/>
+   
     </div>
   );
 }
