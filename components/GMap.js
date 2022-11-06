@@ -1,31 +1,37 @@
-import React from "react";
-import GoogleMapReact from 'google-map-react';
+import React from 'react'
+import {useJsApiLoader,GoogleMap,Marker,Autocomplete} from '@react-google-maps/api'
+import { useState } from 'react'
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-export default function SimpleMap(){
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
+const center = {lat:48.4,lng:2.29}
+function GMap() {
+  const [map,setMap] = useState(/** @type google.maps.Map */)
 
+  const {isLoaded} = useJsApiLoader({
+    googleMapsApiKey : process.env.GOOGLE_API,
+    
+  })
+  if(!isLoaded){
+    return <>Loading...</>
+  }
   return (
-    // Important! Always set the container height explicitly
-    <div style={{ height: '100vh', width: '100%' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyBVgttwZQAUSexLHgZkFPcPc1JIu07xPgc" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text="My Marker"
-        />
-      </GoogleMapReact>
+    <div className='w-screen h-screen '>
+<div className="absolute  z-20 text-3xl bg-white" onClick={()=>map.panTo(center)}>
+  Center
+ 
+
+  {/* <input type="text" name="" id="" className='border' /> */}
+ 
+</div>
+<GoogleMap center={center} zoom={15} mapContainerStyle={{width:'100%',height:'100%'}}
+onLoad={(map)=>setMap(map)}>
+  <Marker position={center}/>
+</GoogleMap>
+
+
+
     </div>
-  );
+  )
 }
+
+export default GMap
