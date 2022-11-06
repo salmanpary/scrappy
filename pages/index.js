@@ -1,10 +1,10 @@
 
-import Signup2 from "../components/Signup2"
+import Signup1 from "../components/Signup1"
 
 export default function Home() {
   return (
    
-      <Signup2/>
+    <Signup1 />
        
    
   )
