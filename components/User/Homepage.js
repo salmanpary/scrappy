@@ -13,30 +13,30 @@ const Homepage = () => {
   const router = useRouter();
   const cardsdata = [
     {
-      url: "",
+      url: "/images/paper.png",
       title: "paper",
-      description: "dslkfad",
+      description: "Newspapers , Magazines , Books",
     },
     {
-      url: "",
+      url: "/images/plastic.png",
       title: "plastic",
-      description: "dddfadfh",
+      description: "plastics like PET,HDPE ,PVC etc",
     },
-    {
+    {url: "/images/metals.png",
       title: "metal",
-      description: "fldasjflksadflk",
+      description: "pieces of metal like iron , copper etc",
     },
-    {
+    {url: "/images/ewaste.png",
       title: "ewaste",
-      description: "flajdjlfjad",
+      description: "CPU, Monitor, LED TV, Bulb etc",
     },
-    {
-      title: "motor",
-      description: "ldfjldakkf",
+    {url: "/images/motor.png",
+    title: "Motor",
+      description: "motors of fan etc",
     },
-    {
+    {url: "/images/others.png",
       title: "others",
-      description: "dflkdajflk",
+      description: "Battery, Tyre, Fridge etc",
     },
   ];
   const [selectedoptions, setselectedoptions] = useState([]);
