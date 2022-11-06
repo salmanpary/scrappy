@@ -3,6 +3,8 @@ import { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 import Balls from "../Balls";
+import Navbar from "../Navbar";
+
 function UserComplaint() {
   const router = useRouter();
   const [complaint, setComplaint] = useState({
@@ -38,7 +40,7 @@ function UserComplaint() {
     <div className="flex justify-center items-center h-screen">
       <div className="card1 p-8 h-[50rem] flex-col justify-center items-center ">
         <h3 className="font-poppins font-semibold text-3xl text-gray-900 mb-8">
-          Report a place
+          Report an issue
         </h3>
         <div className="flex flex-col items-start gap-12 ">
           <div>
@@ -88,7 +90,8 @@ function UserComplaint() {
           Submit
         </div>
       </div>
-      <Balls />
+      <Balls w='300' h = '400'/>
+      <Navbar/>
     </div>
   );
 }

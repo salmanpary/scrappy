@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Topbar = () => {
   return (
     <div>
@@ -7,10 +8,10 @@ const Topbar = () => {
         <div className=" flex  justify-start font-poppins text-xl font-medium  text-black rounded-2xl ">
           Hey Lisa!
         </div>
-        <div className="Icon rounded-full h-12 w-12 bg-slate-700"></div>
+        <div className="Icon rounded-full h-12 w-12 bg-slate-700"><img src = "/propic.svg"/></div>
       </div>
     </div>
   );
 };
 
-export default Topbar;
+export default Topbar;  

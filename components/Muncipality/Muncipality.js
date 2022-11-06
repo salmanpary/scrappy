@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Muncipalitycard from './Muncipalitycard'
 import axios from 'axios'
 import Balls from '../Balls'
+import Navbar from "../Navbar";
+
 const Muncipality = () => {
 
   const [collection, setCollection] = useState({})
@@ -52,7 +54,8 @@ const Muncipality = () => {
         </div>
 
 
-        <Balls/>
+        <Balls w='300' h = '400'/>
+        <Navbar/>
       </div>
     </>
   )

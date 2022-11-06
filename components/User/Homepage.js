@@ -53,10 +53,10 @@ const Homepage = () => {
   }, [selectedoptions]);
   console.log(selectedoptions);
   return (
-    <div className="">
+    <div className="flex flex-col justify-center">
       <Topbar />
 
-      <div className="main-page-text flex w-[20rem] ml-12 justify-start font-poppins text-xl font-bold m-4  mb-8 bg-white rounded-3xl p-3 px-4">
+      <div className="main-page-text flex w-[22rem]  justify-start font-poppins text-xl font-bold m-4  mb-8 bg-white rounded-3xl p-3 px-4">
         Sell Scraps And Earn Cash{" "}
       </div>
      <div className="overflow-y-scroll">
@@ -75,7 +75,7 @@ const Homepage = () => {
       </div>
       <div className="flex justify-center mb-20">
         <button
-          className="bg-slate-900 text-white font-poppins  button-gradient w-52  font-medium h-14 rounded-3xl mt-4 "
+          className="bg-slate-900 text-white font-poppins  button-gradient w-52  font-medium h-14 rounded-3xl mt-6 "
           onClick={() => {
             router.push("/userhome2");
           }}
@@ -87,7 +87,7 @@ const Homepage = () => {
      </div>
 
       <Navbar />
-      <Balls />
+      <Balls w='300' h = '400'/>
     </div>
   );
 };

@@ -5,6 +5,8 @@ import axios from 'axios'
 import { userRoleActions } from '../store/userrole-slice'
 import { useDispatch } from 'react-redux'
 import Balls from './Balls'
+import Navbar from './Navbar'
+
 const Signup2 = () => {
   const role=useSelector(state=>state.user.userrole)
   const  dispatch=useDispatch()
@@ -71,7 +73,8 @@ const submitHandler=async()=>{
       onClick={()=>router.push('/login')}
       >already a user?</button>
       </div>
-      <Balls/>
+      <Balls w='400' h = '500'/>
+      <Navbar/>
     </div>
   )
 }

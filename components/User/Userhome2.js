@@ -32,7 +32,7 @@ const Userhome2 = () => {
     }
   };
   return (
-    <div className="">
+    <div className=" ">
       <Topbar />
 
       <div className="main-page-text flex w-44 ml-12 justify-start font-poppins text-m font-bold  bg-white rounded-3xl p-3 px-4">
@@ -110,7 +110,7 @@ const Userhome2 = () => {
 
       <div className="flex justify-center">
         <button
-          className="button-gradient text-white font-poppins   w-52  font-medium h-14 rounded-3xl mt-8 "
+          className="button-gradient text-white font-poppins   w-52  font-medium h-14 rounded-3xl mt-12 "
           onClick={() => {
             submithandler();
           }}
@@ -120,7 +120,7 @@ const Userhome2 = () => {
       </div>
 
       <Navbar />
-      <Balls/>  
+      <Balls w='300' h = '400'/>
     </div>
   );
 };

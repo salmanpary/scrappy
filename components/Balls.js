@@ -1,11 +1,11 @@
 import React from "react";
 
-const Balls = () => {
+const Balls = (props) => {
   return (
     <div className=" absolute -z-10 top-0 right-0 ">
       <svg
-        width="460"
-        height="680"
+        width={props.w}
+        height={props.h}
         viewBox="0 0 344 479"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
