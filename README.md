@@ -2,7 +2,7 @@
 
 Responsible waste collection starts here
 
-<b>How to run<b>
+## How to run
 npm run dev
 
 ## Hosted Links
