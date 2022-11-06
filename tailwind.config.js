@@ -12,6 +12,7 @@ module.exports = {
       'base': ['Oswald', 'sans-serif'] ,
       'poppins': ['Poppins', 'sans-serif'],
       'poor': ['Poor Story', 'cursive'],
+      'logo': ['Ruler Modern', 'normal'],
     },
   },
   },

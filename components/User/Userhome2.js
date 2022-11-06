@@ -4,6 +4,7 @@ import Topbar from "../Topbar";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import axios from "axios";
+import Balls from "../Balls";
 const Userhome2 = () => {
   const items = useSelector((state) => state.items.items);
   const [imageurl, setimageurl] = useState("");
@@ -34,27 +35,30 @@ const Userhome2 = () => {
     <div className="">
       <Topbar />
 
-      <div className="main-page-text flex w-44 ml-12 justify-start font-poppins text-m font-bold  bg-slate-300 rounded-3xl p-3 px-4">
+      <div className="main-page-text flex w-44 ml-12 justify-start font-poppins text-m font-bold  bg-white rounded-3xl p-3 px-4">
         Sell Your Scraps{" "}
       </div>
 
+      <div className="card3 mt-4 ml-12 flex flex-col justify-center items-center">
       <div className="flex justify-center">
-        <button className="bg-slate-900 text-white font-poppins font-medium  rounded-3xl mt-4  mb-8 p-4">
-          Upload Photo
-        </button>
+        
       </div>
-      <div className="flex justify-center items-center gap-2">
-        <span class="label">Image url: </span>
+      <div className="flex justify-center items-center gap-2 mt-8">
+        <span class="label font-poppins font-normal">Image url: </span>
 
         <input
           type="text"
-          className="bg-slate-200 h-8 rounded-sm"
+          className="bg-gray-100 h-12 p-4  rounded-xl"
           onChange={(e) => {
             setimageurl(e.target.value);
           }}
         />
       </div>
-      <div className="main-page-text flex w-52 ml-12 justify-start font-poppins text-m font-bold m-4  bg-slate-300 rounded-3xl p-3 px-4">
+      <button className="button-gradient text-white font-poppins font-medium  rounded-3xl mt-4  mb-8 p-4">
+          Upload Photo
+        </button>
+      </div>
+      <div className="main-page-text flex w-52 ml-12 justify-start font-poppins text-m font-bold m-4  bg-white rounded-3xl p-3 px-4">
         Scheduled Pickups{" "}
       </div>
 
@@ -67,7 +71,7 @@ const Userhome2 = () => {
         ></input>
       </div>
 
-      <div className="main-page-text flex w-44 ml-12 justify-start font-poppins text-m font-bold  bg-slate-300 rounded-3xl p-3 px-4 mt-16">
+      <div className="main-page-text flex w-44 ml-12 justify-start font-poppins text-m font-bold  bg-white rounded-3xl p-3 px-4 mt-16">
         Select Time
       </div>
 
@@ -93,20 +97,20 @@ const Userhome2 = () => {
         Pickup location
       </div> */}
       <div className="flex justify-center items-center gap-2">
-        <label htmlFor="" className="">
+        <label htmlFor="" className="font-poppins font-norma">
           Location:
         </label>
 
         <input
           type="text"
-          className="bg-slate-200  h-8 rounded-sm"
+          className="bg-gray-100  h-12 p-4 rounded-xl"
           onChange={(e) => setaddress(e.target.value)}
         />
       </div>
 
       <div className="flex justify-center">
         <button
-          className="bg-slate-900 text-white font-poppins   w-52  font-medium h-14 rounded-3xl mt-8 "
+          className="button-gradient text-white font-poppins   w-52  font-medium h-14 rounded-3xl mt-8 "
           onClick={() => {
             submithandler();
           }}
@@ -116,6 +120,7 @@ const Userhome2 = () => {
       </div>
 
       <Navbar />
+      <Balls/>  
     </div>
   );
 };

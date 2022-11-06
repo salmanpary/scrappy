@@ -43,8 +43,10 @@ const submitHandler=async()=>{
 
   const router = useRouter()
   return (
-    <div className='flex-col font-poppins flex items-center  gap-8 mt-12' >
-  
+    <div className='flex-col font-poppins flex items-center  gap-12 mt-12' >
+      
+      <div className="font-logo text-white text-7xl">Scrappy.</div>
+
       <div className=' card1 flex-col justify-center flex items-center h-screen '>
       <div className=' text-white font-poppins font-semibold text-2xl  mb-4'>SignUp </div>
       <div className='flex-col flex gap-4'>

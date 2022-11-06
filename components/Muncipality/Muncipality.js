@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Muncipalitycard from './Muncipalitycard'
 import axios from 'axios'
+import Balls from '../Balls'
 const Muncipality = () => {
 
   const [collection, setCollection] = useState({})
@@ -22,11 +23,14 @@ const Muncipality = () => {
     <>
       <div className='m-10'>
 
-        <div className='font-bold text-3xl'>Muncipality</div>
-        <div>Registered Complaints</div>
+        <div className='font-bold text-white text-3xl font-poppins card4 p-4 flex flex-col justify-start'>Muncipality
+        <div className='font-light text-sm text-white'>registered complaints :</div></div>
+        
 
         <div className="flex flex-col gap-6">
-          <h3>Pending</h3>
+         <div className='card1 flex justify-start p-4 px-6 mt-4'>
+         <h3 className='font-poppins text-xl text-gray-800 font-normal'>Pending :</h3>
+         </div>
           {collection?.municipality?.map((item, index) => (
             <>
               {!item?.status &&
@@ -48,7 +52,7 @@ const Muncipality = () => {
         </div>
 
 
-
+        <Balls/>
       </div>
     </>
   )

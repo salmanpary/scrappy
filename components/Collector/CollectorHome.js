@@ -23,8 +23,8 @@ function CollectorHome() {
     fetchApi();
   }, []);
   return (
-    <div>
-      <h3 className="ml-4 font-bold text-2xl">Pending</h3>
+    <div className="bg-slate-100 opacity-80">
+      <h3 className="ml-4 font-bold text-3xl mt-8 mb-8 font-poppins">Pending Requests</h3>
       <div className="flex flex-col gap-4 text-white mt-4 items-center">
         {collection
           ?.filter((item) => !item.status)
